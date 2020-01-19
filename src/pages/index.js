@@ -43,7 +43,7 @@ const item = {
 function IndexPage() {
   return (
     <Layout>
-      <SEO keywords={[`gatsby`, `tailwind`]} title="Home" />
+      <SEO keywords={[`dynalist`, `Highlighter`]} title="Chrome Extension" />
 
       <motion.section initial="hidden" animate="visible" variants={page}>
         <motion.div variants={item}>
@@ -52,16 +52,18 @@ function IndexPage() {
           </h1>
           <p className="mt-4 text-2xl text-left">
             Using Dynalist Highlighter you can easily highlight text on any web
-            page and sync them to your Dynalist Inbox. This is especially
-            helpful if you are doing research or when you want to build your own
-            knowledge-base.
+            page and sync them to your Dynalist Inbox. This is particularly
+            helpful if you are doing research, taking notes on a guide or when
+            you want to build your own knowledge-base.
           </p>
-          <motion.button
-            whileHover={{ scale: 1.025 }}
-            className="px-6 py-2 mt-4 text-xl font-light text-white bg-blue-500 rounded-lg hover:bg-blue-400 hover:shadow-lg shadow-hover-transition"
-          >
-            Add to Chrome <span class="opacity-75 text-lg">It's free</span>
-          </motion.button>
+          <a href="https://chrome.google.com/webstore/detail/dynalist-highlighter/afnffidekokfdaepocnkcmmepjibjhln">
+            <motion.button
+              whileHover={{ scale: 1.025 }}
+              className="px-6 py-2 mt-4 text-xl font-light text-white bg-blue-500 rounded-lg hover:bg-blue-400 hover:shadow-lg shadow-hover-transition"
+            >
+              Add to Chrome <span class="opacity-75 text-lg">It's free</span>
+            </motion.button>
+          </a>
         </motion.div>
         <motion.div
           variants={item}
@@ -70,35 +72,40 @@ function IndexPage() {
           <div class="w-full overflow-hidden lg:my-2 lg:px-2 lg:w-1/2 mt-4 md:mt-0">
             <span className="text-xl font-bold">Will this cost anything?</span>
             <p className="mt-2 md:mt-2">
-              Nope, the extension is completly free. If you want to support the
-              project, you could consider a{" "}
-              <a href="#" className="underline">
+              The extension is completly free. You could consider a{" "}
+              <a href="paypal.me/wirtzdaniel" className="underline">
                 donation
-              </a>
-              .
+              </a>{" "}
+              if you want to support the project
             </p>
           </div>
           <div class="w-full overflow-hidden lg:my-2 lg:px-2 lg:w-1/2 mt-4 md:mt-0 ">
             <span className="text-xl font-bold">
-              How can I load the extension?
+              Where can I give feedback?
             </span>
             <p className="mt-2 md:mt-2">
-              After you added the extension to chrome, you can click on the
-              extension icon to open Dynalist Highlighter in the current page.
+              <a href="mailto:danielwirtzx@gmail.com">Write me directly</a> if
+              you have a question or if you want to provide feedback. I'm
+              actively looking for e-mails and will reply quickly.
             </p>
           </div>
           <div class="w-full overflow-hidden lg:my-2 lg:px-2 lg:w-1/2 mt-4 md:mt-0">
-            <span className="text-xl font-bold">How can I highlight?</span>
+            <span className="text-xl font-bold">Can I contribute?</span>
             <p className="mt-2 md:mt-2">
-              When the extension is active, just select some text and you will
-              be prompted with the option to highlight it.
+              The project is open-source and available{" "}
+              <a href="https://github.com/wirtzdan/dynalist-highlighter">
+                on GitHub
+              </a>
+              . If you want to add a new feature, add a new Issue on Github and
+              we can discuss the details.
             </p>
           </div>
           <div class="w-full overflow-hidden lg:my-2 lg:px-2 lg:w-1/2 mt-4 md:mt-0">
-            <span className="text-xl font-bold">How can I contribute?</span>
+            <span className="text-xl font-bold">Why do I need a API Key?</span>
             <p className="mt-2 md:mt-2">
-              The project is open-sourced on GitHub and I would be happy about
-              coontributions and improvments.
+              The extension uses the API Key to connect with your Dynalist
+              account. Without it, it would not be possible to automatically add
+              the highlights to your account.
             </p>
           </div>
         </motion.div>

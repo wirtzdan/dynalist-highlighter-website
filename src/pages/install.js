@@ -43,7 +43,7 @@ const item = {
 function IndexPage() {
   return (
     <Layout>
-      <SEO keywords={[`gatsby`, `tailwind`]} title="Home" />
+      <SEO keywords={[`dynalist`, `highlighter`]} title="Install" />
 
       <motion.section initial="hidden" animate="visible" variants={page}>
         <motion.div variants={item}>
@@ -64,14 +64,17 @@ function IndexPage() {
               <span className="flex items-center justify-center w-8 h-8 mr-4 text-xl font-bold bg-yellow-400 rounded-full">
                 1
               </span>
-              <span className="text-xl font-bold">Add your API Key</span>
+              <span className="text-xl font-bold">
+                Add your API Key and set your highlight inbox
+              </span>
             </div>
 
             <p className="mt-2">
               The extension needs your API Key to push the highlights to your
               account. You can find your API Key on the{" "}
               <a href="https://dynalist.io/developer">developer page</a>. Copy
-              the key and add it to the options.
+              the key and add it to the options. When you added the key, you can
+              choose one of your files to be the highlight inbox.
             </p>
             <div className="px-4 py-2 my-4 bg-gray-100 rounded-lg">
               <p className="italic ">
@@ -96,7 +99,7 @@ function IndexPage() {
               <div className="px-4 py-2 my-4 bg-gray-100 rounded-lg">
                 <p className="italic">
                   <span className="font-bold">Tip:</span> You don't need to be
-                  prcise with your selection. The extension automatically
+                  precise with your selection. The extension automatically
                   extends the selection to include full words and removes empty
                   space.
                 </p>
@@ -115,9 +118,9 @@ function IndexPage() {
             </div>
 
             <p className="mt-2">
-              In the highlight widget on the bottom right you can always see the
-              number of highlights and change the bookmark title. When you are
-              finished, click on "Add to Dynalist".
+              In the highlight widget on the bottom right, you can always see
+              the number of highlights and change the bookmark title. When you
+              are finished, click on "Add to Dynalist".
             </p>
 
             <div className="px-4 py-2 my-4 bg-gray-100 rounded-lg">
