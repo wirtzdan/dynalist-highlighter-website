@@ -43,7 +43,7 @@ const item = {
 function IndexPage() {
   return (
     <Layout>
-      <SEO keywords={[`dynalist`, `highlighter`]} title="Install" />
+      <SEO keywords={[`dynalist`, `highlighter`]} title="Installation Guide" />
 
       <motion.section initial="hidden" animate="visible" variants={page}>
         <motion.div variants={item}>
