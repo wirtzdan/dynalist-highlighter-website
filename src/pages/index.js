@@ -73,7 +73,7 @@ function IndexPage() {
             <span className="text-xl font-bold">Will this cost anything?</span>
             <p className="mt-2 md:mt-2">
               The extension is completly free. You could consider a{" "}
-              <a href="paypal.me/wirtzdaniel" className="underline">
+              <a href="https://www.paypal.me/wirtzdaniel" className="underline">
                 donation
               </a>{" "}
               if you want to support the project
