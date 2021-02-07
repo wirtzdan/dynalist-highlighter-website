@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Dynalist Highlighter`,
     description: `Highlight the web`,
-    author: `@wirtzdan`
+    author: `@wirtzdan`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,16 +15,22 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#007FFF`,
         display: `browser`,
-        icon: `./src/assets/favicon.svg`
-      }
+        icon: `./src/assets/favicon.svg`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-plausible`,
+      options: {
+        domain: `dynalist-highlighter.danielwirtz.com`,
+      },
     },
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         tailwind: true,
-        purgeOnly: [`src/css/style.css`]
-      }
-    }
-  ]
+        purgeOnly: [`src/css/style.css`],
+      },
+    },
+  ],
 };
